@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "318849249264",
+    "firebase_url": "https://toowatch-80caf.firebaseio.com",
+    "project_id": "toowatch-80caf",
+    "storage_bucket": "toowatch-80caf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318849249264:android:d63904f45b3b0d72",
+        "android_client_info": {
+          "package_name": "com.designfreed.toowatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318849249264-909sul6qt0qveks1e765r9pcm35q670m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.designfreed.toowatch",
+            "certificate_hash": "1483cc98c2befcb4b04eab726559debd29dd94fa"
+          }
+        },
+        {
+          "client_id": "318849249264-sj2c02e3pbreigp0cj65rofm4ktn69f1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKKy5JnqxVkpOYSyEjG_lobyCrIuy8v4Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318849249264-sj2c02e3pbreigp0cj65rofm4ktn69f1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
