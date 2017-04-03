@@ -7,8 +7,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -34,10 +36,11 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText mEmailField;
     private EditText mPasswordField;
-    private Button mLoginBtn;
     private Button mSignUpBtn;
 
-    private SignInButton mLoginGoogleBtn;
+    private LinearLayout mLoginGoogleBtn;
+    private LinearLayout mLoginFacebookBtn;
+    private LinearLayout mLoginToowatchBtn;
 
     private DatabaseReference mDatabaseUsers;
     private FirebaseAuth mAuth;
@@ -53,6 +56,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         mDatabaseUsers = FirebaseDatabase.getInstance().getReference().child("users");
         mDatabaseUsers.keepSynced(true);
 
@@ -61,19 +66,27 @@ public class LoginActivity extends AppCompatActivity {
         mEmailField = (EditText) findViewById(R.id.email_field);
         mPasswordField = (EditText) findViewById(R.id.password_field);
 
-        mLoginBtn = (Button) findViewById(R.id.login_btn);
-        mLoginBtn.setOnClickListener(new View.OnClickListener() {
+        mLoginToowatchBtn = (LinearLayout) findViewById(R.id.login_toowatch_btn);
+        mLoginToowatchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 emailSignIn();
             }
         });
 
-        mLoginGoogleBtn = (SignInButton) findViewById(R.id.login_google_btn);
+        mLoginGoogleBtn = (LinearLayout) findViewById(R.id.login_google_btn);
         mLoginGoogleBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 googleSignIn();
+            }
+        });
+
+        mLoginFacebookBtn = (LinearLayout) findViewById(R.id.login_facebook_btn);
+        mLoginFacebookBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
             }
         });
 
