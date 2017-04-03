@@ -9,12 +9,32 @@
     </style>
 
 
-    <style name="CustomButton">
+    <style name="LinearLayoutButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:padding">14dp</item>
+        <item name="android:padding">8dp</item>
         <item name="android:elevation">2dp</item>
         <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
 
+    </style>
+
+    <style name="LoginSignInText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:text">sign in with</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="LoginSignInProvider">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
     </style>
 </resources>

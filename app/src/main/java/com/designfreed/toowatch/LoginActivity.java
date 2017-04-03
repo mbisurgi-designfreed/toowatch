@@ -11,6 +11,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -34,13 +36,11 @@ import com.google.firebase.database.ValueEventListener;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private EditText mEmailField;
-    private EditText mPasswordField;
-    private Button mSignUpBtn;
+    private TextView mSignUpBtn;
 
-    private LinearLayout mLoginGoogleBtn;
-    private LinearLayout mLoginFacebookBtn;
-    private LinearLayout mLoginToowatchBtn;
+    private RelativeLayout mLoginGoogleBtn;
+    private RelativeLayout mLoginFacebookBtn;
+    private RelativeLayout mLoginToowatchBtn;
 
     private DatabaseReference mDatabaseUsers;
     private FirebaseAuth mAuth;
@@ -63,10 +63,7 @@ public class LoginActivity extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
 
-        mEmailField = (EditText) findViewById(R.id.email_field);
-        mPasswordField = (EditText) findViewById(R.id.password_field);
-
-        mLoginToowatchBtn = (LinearLayout) findViewById(R.id.login_toowatch_btn);
+        mLoginToowatchBtn = (RelativeLayout) findViewById(R.id.login_toowatch_btn);
         mLoginToowatchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        mLoginGoogleBtn = (LinearLayout) findViewById(R.id.login_google_btn);
+        mLoginGoogleBtn = (RelativeLayout) findViewById(R.id.login_google_btn);
         mLoginGoogleBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        mLoginFacebookBtn = (LinearLayout) findViewById(R.id.login_facebook_btn);
+        mLoginFacebookBtn = (RelativeLayout) findViewById(R.id.login_facebook_btn);
         mLoginFacebookBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,7 +87,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        mSignUpBtn =(Button) findViewById(R.id.signup_btn);
+        mSignUpBtn =(TextView) findViewById(R.id.signup_btn);
         mSignUpBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -119,8 +116,8 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void emailSignIn() {
-        String email = mEmailField.getText().toString();
-        String password = mPasswordField.getText().toString();
+        String email = "";
+        String password = "";
 
         if (!TextUtils.isEmpty(email) && !TextUtils.isEmpty(password)) {
 

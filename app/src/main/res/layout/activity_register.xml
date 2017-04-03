@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="20dp"
+    android:background="@drawable/bg_login"
     tools:context="com.designfreed.toowatch.RegisterActivity">
 
     <EditText
@@ -11,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="text"
+        android:textColor="@color/white"
         android:hint="Nombre"/>
 
     <EditText
@@ -19,6 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/name_field"
         android:inputType="textEmailAddress"
+        android:textColor="@color/white"
         android:hint="Email"/>
 
     <EditText
@@ -27,6 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/email_field"
         android:inputType="textPassword"
+        android:textColor="@color/white"
         android:hint="Password"/>
 
     <Button
