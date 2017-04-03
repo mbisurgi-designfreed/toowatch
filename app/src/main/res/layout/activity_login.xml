@@ -29,6 +29,12 @@
         android:layout_below="@+id/password_field"
         android:text="Login"/>
 
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/login_google_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn" />
+
     <Button
         android:id="@+id/signup_btn"
         android:layout_width="match_parent"
