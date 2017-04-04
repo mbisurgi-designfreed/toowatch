@@ -4,39 +4,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    android:background="@drawable/bg_login"
+    android:background="@drawable/bg_create"
     tools:context="com.designfreed.toowatch.RegisterActivity">
-
-    <EditText
-        android:id="@+id/name_field"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="text"
-        android:textColor="@color/white"
-        android:hint="Nombre"/>
-
-    <EditText
-        android:id="@+id/email_field"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/name_field"
-        android:inputType="textEmailAddress"
-        android:textColor="@color/white"
-        android:hint="Email"/>
-
-    <EditText
-        android:id="@+id/password_field"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/email_field"
-        android:inputType="textPassword"
-        android:textColor="@color/white"
-        android:hint="Password"/>
 
     <Button
         android:id="@+id/signup_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Crear Cuenta"/>
+        android:text="Create Account"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"/>
+
+    <EditText
+        android:id="@+id/name_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/email_field"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text"
+        android:inputType="text"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Nombre"/>
+
+    <EditText
+        android:id="@+id/email_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/password_field"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text"
+        android:inputType="textEmailAddress"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/password_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signup_btn"
+        android:padding="8dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edit_text"
+        android:inputType="textPassword"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:hint="Password"/>
+
 </RelativeLayout>
