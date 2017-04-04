@@ -12,51 +12,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Create Account"
         android:background="@color/colorAccent"
         android:textColor="@color/white"
-        android:fontFamily="sans-serif-medium"/>
+        android:fontFamily="sans-serif-medium"
+        android:text="Create Account"/>
 
     <EditText
         android:id="@+id/name_field"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/EditText"
         android:layout_above="@+id/email_field"
-        android:padding="8dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/edit_text"
         android:inputType="text"
-        android:fontFamily="sans-serif-light"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:hint="Nombre"/>
+        android:hint="Name"/>
 
     <EditText
         android:id="@+id/email_field"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/EditText"
         android:layout_above="@+id/password_field"
-        android:padding="8dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/edit_text"
         android:inputType="textEmailAddress"
-        android:fontFamily="sans-serif-light"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
         android:hint="Email"/>
 
     <EditText
         android:id="@+id/password_field"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/EditText"
         android:layout_above="@+id/signup_btn"
-        android:padding="8dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/edit_text"
         android:inputType="textPassword"
-        android:fontFamily="sans-serif-light"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
         android:hint="Password"/>
 
 </RelativeLayout>
