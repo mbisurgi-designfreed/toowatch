@@ -15,27 +15,27 @@
         android:background="@color/colorAccent"
         android:textColor="@color/white"
         android:fontFamily="sans-serif-medium"
-        android:text="Sign Up"/>
+        android:text="@string/sign_up"/>
 
     <EditText
         android:id="@+id/name_field"
         style="@style/EditText"
         android:layout_above="@+id/email_field"
         android:inputType="text"
-        android:hint="Name"/>
+        android:hint="@string/register_name_hint"/>
 
     <EditText
         android:id="@+id/email_field"
         style="@style/EditText"
         android:layout_above="@+id/password_field"
         android:inputType="textEmailAddress"
-        android:hint="Email"/>
+        android:hint="@string/register_email_hint"/>
 
     <EditText
         android:id="@+id/password_field"
         style="@style/EditText"
         android:layout_above="@+id/signup_btn"
         android:inputType="textPassword"
-        android:hint="Password"/>
+        android:hint="@string/register_password_hint"/>
 
 </RelativeLayout>

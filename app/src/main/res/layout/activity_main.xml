@@ -32,9 +32,9 @@
             android:id="@+id/reject"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:src="@mipmap/appicon"/>
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/appicon" />
 
         <ImageButton
             android:id="@+id/wish_list"

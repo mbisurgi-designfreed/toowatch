@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Toowatch</string>
+    <string name="facebook_app_id">241372002995036</string>
+
+    <string name="sign_in">iniciar sesion con</string>
+    <string name="need_account">No tenes usuario?</string>
+    <string name="touch_here">\u0020Apreta aca.</string>
+
+    <string name="register_name_hint">Nombre</string>
+    <string name="register_email_hint">Email</string>
+    <string name="register_password_hint">Contraseña</string>
+    <string name="sign_up">Registrarse</string>
+
+    <string name="finish_setup">Finalizar Configuracion</string>
+</resources>

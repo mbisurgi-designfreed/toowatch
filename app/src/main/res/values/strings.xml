@@ -3,4 +3,14 @@
     <string name="app_name">Toowatch</string>
     <string name="facebook_app_id">241372002995036</string>
 
+    <string name="sign_in">sign in with</string>
+    <string name="need_account">Don\'t have an user?</string>
+    <string name="touch_here">\u0020Touch here.</string>
+
+    <string name="register_name_hint">Name</string>
+    <string name="register_email_hint">Email</string>
+    <string name="register_password_hint">Password</string>
+    <string name="sign_up">Sign Up</string>
+
+    <string name="finish_setup">Finish Setup</string>
 </resources>
