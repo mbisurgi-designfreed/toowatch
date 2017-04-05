@@ -1,21 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="@dimen/activity_padding"
     tools:context="com.designfreed.toowatch.MainActivity">
 
     <RelativeLayout
         android:id="@+id/relative_swype"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
 
-        <com.mindorks.placeholderview.SwipePlaceHolderView
-            android:id="@+id/swipeView"
+        <com.lorentzos.flingswipe.SwipeFlingAdapterView
+            android:id="@+id/swipe_view"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"/>
+            android:layout_height="200dp"
+            android:background="@color/white"
+            app:rotation_degrees="15.5" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -48,6 +51,12 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentBottom="true"
             android:src="@mipmap/appicon"/>
+
+        <Button
+            android:id="@+id/signout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"/>
     </RelativeLayout>
 
 </RelativeLayout>

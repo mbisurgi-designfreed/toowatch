@@ -48,4 +48,11 @@
         <item name="android:fontFamily">sans-serif-light</item>
         <item name="android:textColorHint">@color/white</item>
     </style>
+
+    <style name="ProfilePic">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
 </resources>
