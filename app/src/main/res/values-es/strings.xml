@@ -10,7 +10,7 @@
     <string name="register_name_hint">Nombre</string>
     <string name="register_email_hint">Email</string>
     <string name="register_password_hint">Contraseña</string>
-    <string name="sign_up">Registrarse</string>
+    <string name="sign_up">Crear Cuenta</string>
 
     <string name="finish_setup">Finalizar Configuracion</string>
 </resources>

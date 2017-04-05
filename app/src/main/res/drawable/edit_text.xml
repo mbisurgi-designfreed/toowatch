@@ -3,7 +3,7 @@
     <item
         android:state_enabled="true"
         android:state_focused="true"
-        android:drawable="@drawable/input_outline_focus"/>
+        android:drawable="@drawable/input_outline_normal"/>
 
     <item
         android:state_enabled="true"

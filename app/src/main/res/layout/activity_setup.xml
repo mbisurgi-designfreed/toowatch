@@ -10,12 +10,8 @@
 
     <Button
         android:id="@+id/setup_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Button"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorAccent"
-        android:textColor="@color/white"
-        android:fontFamily="sans-serif-medium"
         android:text="@string/finish_setup"/>
 
     <ImageButton
@@ -24,7 +20,7 @@
         android:layout_above="@id/name_field"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
-        app:srcCompat="@drawable/profile_default" />
+        app:srcCompat="@drawable/profile_default"/>
 
     <EditText
         android:id="@+id/name_field"

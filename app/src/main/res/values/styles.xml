@@ -55,4 +55,14 @@
         <item name="android:background">@color/transparent</item>
         <item name="android:scaleType">centerCrop</item>
     </style>
+
+    <style name="Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">75dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:elevation">10dp</item>
+    </style>
 </resources>

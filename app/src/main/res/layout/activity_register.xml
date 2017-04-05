@@ -9,13 +9,10 @@
 
     <Button
         android:id="@+id/signup_btn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/Button"
         android:layout_alignParentBottom="true"
-        android:background="@color/colorAccent"
-        android:textColor="@color/white"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/sign_up"/>
+        android:text="@string/sign_up"
+        android:elevation="10dp"/>
 
     <EditText
         android:id="@+id/name_field"
