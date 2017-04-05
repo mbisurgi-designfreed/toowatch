@@ -16,7 +16,7 @@
         <com.lorentzos.flingswipe.SwipeFlingAdapterView
             android:id="@+id/swipe_view"
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="300dp"
             android:background="@color/white"
             app:rotation_degrees="15.5" />
     </RelativeLayout>
